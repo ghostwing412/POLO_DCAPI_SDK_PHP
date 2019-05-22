@@ -1,5 +1,5 @@
 {
-    "name": "dc_api_sdk/php",
+    "name": "POLOCAI/DC_API_SDK_PHP",
     "description": "the data center api by php edition",
     "type": "library",
     "require-dev": {

@@ -1,3 +1,4 @@
 /vendor
 /test
 .DS_Store
+/.idea
