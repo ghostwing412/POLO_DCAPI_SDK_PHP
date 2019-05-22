@@ -1,5 +1,4 @@
 <?php
-require 'vendor/autoload.php';
 function poloDcApiLoader($class)
 {
     $path = str_replace('PoloDcApi\\', '', $class);
