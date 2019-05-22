@@ -1,0 +1,21 @@
+{
+    "name": "dc_api_sdk/php",
+    "description": "the data center api by php edition",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ghostwing412",
+            "email": "ghostwing412@163.com"
+        }
+    ],
+    "require": {
+        "php":">=5.5"
+    },
+    "autoload": {
+        "psr-4": {"PoloDcApi\\": "src/"}
+    }
+}
