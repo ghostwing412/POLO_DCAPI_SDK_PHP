@@ -2,16 +2,16 @@
 /**
  * Created by PhpStorm.
  * User: ghostwing412
- * Date: 2019-05-20
- * Time: 10:01
+ * Date: 2019-06-20
+ * Time: 11:27
  */
 require 'Config.php';
 
 $api = $_GET['api'];
 $method = [
     'last' => [
-        'ssq', //彩种
-        5//行数
+        'dlt', //彩种
+        \PoloDcApi\Core\Norm::DLT_DXB//norm标识
     ],
     'date' => [
         'dlt',//彩种
@@ -21,7 +21,7 @@ $method = [
 ];
 
 try {
-    $result = new Config(\PoloDcApi\Core\Draw::class);
+    $result = new Config(\PoloDcApi\Core\Norm::class);
     if (array_key_exists($api, $method)) {
         $data = call_user_func_array([$result, $api], $method[$api]);
         echo json_encode($data);
@@ -32,4 +32,3 @@ try {
     echo $e->getMessage().PHP_EOL;
     echo $e->getTraceAsString();
 }
-
