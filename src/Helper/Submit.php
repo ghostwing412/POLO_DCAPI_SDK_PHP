@@ -9,13 +9,13 @@
 namespace PoloDcApi\Helper;
 
 
+use phpDocumentor\Reflection\Types\Integer;
 use PoloDcApi\Http\RequestCore;
 use PoloDcApi\Http\RequestCore_Exception;
 use PoloDcApi\Http\ResponseCore;
 
 class Submit {
-
-
+    protected $connect_timeout = null;
 
     /**
      * @param $url
@@ -59,6 +59,9 @@ class Submit {
      * @throws Submit_Exception
      */
     private function resultHandler(RequestCore &$request) {
+        if (!is_null($this->connect_timeout)){
+            $request->connect_timeout = $this->connect_timeout;
+        }
         /**
          * @var ResponseCore $response
          */
@@ -78,5 +81,8 @@ class Submit {
     }
 
 
+    public function setConnectTimeout(Integer $time){
+        $this->connect_timeout = $time;
+    }
 
 }
