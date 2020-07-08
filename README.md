@@ -9,7 +9,7 @@
 + 可直接从`Github`上面下载，项目中包含`autoload.php`可加载命名空间规则
 + `composer require polocai/dc_api_sdk_php`加入composer包管理
 
-### `example`调用实例
+### `example`目录为调用实例
 
 ### 调用说明
 + 配置
