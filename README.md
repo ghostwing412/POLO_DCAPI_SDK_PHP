@@ -19,8 +19,10 @@
         'secret' => ''//用户secret`
         
 + 走势图`htmlData`接口参数`url`
+
     0.  必须包含`:cate_code`，`:c_code`，`:chart_code`关键字
     1. 链接中`{xxx:(cate_code)xxx}`或者`{xxx:cate_code}`大括号内的内容将被cate_code参数替换
+    
         0. 如果该参数为空，大括号整个以空值替换
         1. 如果该参数值为`zst`，那么替换结果为`xxxzstxxx`以及`xxxzst`
 
